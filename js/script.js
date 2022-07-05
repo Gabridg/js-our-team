@@ -25,5 +25,39 @@ Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
 Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
 Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
-Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
+Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 */
+
+// MileStone 0
+const team = [
+    {
+        founder: [
+            { fullName: 'Wayne Barnett' },
+            { photo: 'wayne-barnett-founder-ceo.jpg' },
+        ],
+        chiefEditor: [
+            { fullName: 'Angela Caroll', photo: 'angela-caroll-chief-editor.jpg' },
+        ],
+        officeManager: [
+            { fullName: 'Walter Gordon', photo: 'walter-gordon-office-manager.jpg' },
+        ],
+        mediaManager: [
+            { fullName: 'Angela Lopez', photo: 'angela-lopez-social-media-manager.jpg' },
+        ],
+        developer: [
+            { fullName: 'Scott Estrada', photo: 'scott-estrada-developer.jpg' },
+        ],
+        graphicDesign: [
+            { fullName: 'Barbara Ramos', photo: 'barbara-ramos-graphic-designer.jpg' },
+        ]
+    }
+]
+
+
+
+//MileStone 1
+
+
+
+
+//MileStone 2
