@@ -31,33 +31,48 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 // MileStone 0
 const team = [
     {
-        founder: [
-            { fullName: 'Wayne Barnett' },
-            { photo: 'wayne-barnett-founder-ceo.jpg' },
-        ],
-        chiefEditor: [
-            { fullName: 'Angela Caroll', photo: 'angela-caroll-chief-editor.jpg' },
-        ],
-        officeManager: [
-            { fullName: 'Walter Gordon', photo: 'walter-gordon-office-manager.jpg' },
-        ],
-        mediaManager: [
-            { fullName: 'Angela Lopez', photo: 'angela-lopez-social-media-manager.jpg' },
-        ],
-        developer: [
-            { fullName: 'Scott Estrada', photo: 'scott-estrada-developer.jpg' },
-        ],
-        graphicDesign: [
-            { fullName: 'Barbara Ramos', photo: 'barbara-ramos-graphic-designer.jpg' },
-        ]
-    }
+        fullName: 'Wayne Barnett',
+        job: 'Founder & CEO',
+        image: 'wayne-barnett-founder-ceo.jpg',
+    },
+    {
+        fullName: 'Angela Caroll',
+        job: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg',
+    },
+    {
+        fullName: 'Walter Gordon',
+        job: 'Office Manager',
+        image: 'walter-gordon-office-manager.jpg',
+    },
+    {
+        fullName: 'Angela Lopez',
+        job: 'Social Media Manage',
+        image: 'angela-lopez-social-media-manager.jpg',
+    },
+    {
+        fullName: 'Scott Estrada',
+        job: 'Developer',
+        image: 'scott-estrada-developer.jpg',
+    },
+    {
+        fullName: 'Barbara Ramos',
+        job: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpgs',
+    },
 ]
-
 
 
 //MileStone 1
 
-
+console.table(team);
 
 
 //MileStone 2
+const teamList = document.getElementById('team-list');
+let items = '';
+for (let i = 0; i < team.length; i++) {
+    const teamMember = team[i];
+    items += `<li>${teamMember.fullName}, ${teamMember.job}, ${teamMember.image}</li>`
+}
+teamList.innerHTML = items;
